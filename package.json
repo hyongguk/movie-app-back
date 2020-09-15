@@ -9,7 +9,9 @@
     "start": "node server/app.js",
     "dev": "node --inspect -r ts-node/register -r dotenv/config server/app.js",
     "seed:make": "knex seed:make",
-    "hack:server": "nodemon server/app.js"
+    "hack:server": "nodemon server/app.js",
+    "latest": "knex migrate:latest",
+    "heroku:back":"latest && seed:make && start"
   },
   "dependencies": {
     "cors": "^2.8.5",
