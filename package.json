@@ -6,12 +6,12 @@
   "author": "Hyong <hyongguk1984@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "node server/app.js",
+    "start": "node server/app.js",
     "dev": "node --inspect -r ts-node/register -r dotenv/config server/app.js",
     "seed:make": "knex seed:make",
     "hack:server": "nodemon server/app.js",
     "latest": "knex migrate:latest",
-    "start":"latest && seed:make && server"
+    "hi":"latest && seed:make && server"
   },
   "dependencies": {
     "cors": "^2.8.5",
