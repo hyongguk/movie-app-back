@@ -1,7 +1,7 @@
 const express = require('express');//もしかしたら4.17.1を第二引数に加えろ
 const app = express();
 const knex = require('./knex.js')
-const port = 4000;
+const port = process.env.PORT　|| 4000;
 const cors = require('cors')
 const db = require("./knex.js")
 
