@@ -11,7 +11,7 @@
     "seed:make": "knex seed:make",
     "hack:server": "nodemon server/app.js",
     "latest": "knex migrate:latest",
-    "hi":"latest && seed:make && server"
+    "hi": "latest && seed:make && server"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -22,6 +22,7 @@
     "knex": "^0.21.5",
     "nodemon": "^2.0.4",
     "pg": "^8.3.3",
+    "shards-react": "^1.0.3",
     "start": "^5.1.0",
     "unirest": "^0.6.0"
   }

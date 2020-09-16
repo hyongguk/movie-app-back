@@ -4,15 +4,11 @@ const knex = require('./knex.js')
 const port = process.env.PORT　|| 4000;
 const cors = require('cors')
 const db = require("./knex.js")
-
+const data = require("../data/movies.json")
 app.use(cors());
 
 app.get('/', async (req, res) => {
-    // const ave = await knex.select().from("movies");
-    // console.log(ave)
-    // let urlOfave = ave[0].poster;
-    //res.send(urlOfave)
-    res.send("hello")
+    res.send(data)
 })
 
 app.listen(port, () => {
