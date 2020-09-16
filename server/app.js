@@ -8,9 +8,10 @@ const db = require("./knex.js")
 app.use(cors());
 
 app.get('/', async (req, res) => {
-    const ave = await knex.select().from("movies");
-    console.log(ave)
-    let urlOfave = ave[0].poster;
+    // const ave = await knex.select().from("movies");
+    // console.log(ave)
+    // let urlOfave = ave[0].poster;
+    //res.send(urlOfave)
     res.send("hello")
 })
 
